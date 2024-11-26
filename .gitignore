@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+cmake-build-debug
+*.bzl
+*.bazel
+.idea
+*.iml
+*.xml
+*.md

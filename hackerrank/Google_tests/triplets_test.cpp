@@ -1,0 +1,39 @@
+//
+// Created by vozak on 2024. 11. 26..
+//
+#include "../hackerrank_lib/triplets.h"
+#include <iostream>
+#include <gtest/gtest.h>
+
+using namespace std;
+
+TEST(TripletsTestSuite, HackerrankCase_1) {
+    const vector<long long> arr = {1, 5, 1, 5, 25, 125};
+    const long long r = 1;
+    const long long result = countTriplets(arr, r);
+
+    ASSERT_EQ(result, 0);
+}
+TEST(TripletsTestSuite, HackerrankCase_2) {
+    const vector<long long> arr = {1, 700017524, 19825744, 777459894, 735573643, 178930800, 381654999, 429832527, 180098534, 927622329, 16298209, 825911952, 507288526, 317338746, 888990172, 560552183, 429755564, 976069902, 240301877, 791130043, 947340732, 134328643, 400900451, 741150090, 213632881, 803543377, 231990946, 999970945, 950575872, 43108758, 207080820, 785652192, 595642633, 226906563, 415628437, 183732627, 405837362, 797283435, 466081505, 438452247, 577422115, 482379713, 116880550, 84710640, 799718459, 5870722, 645262822, 229474022, 834456975, 885564698, 20604064, 634314058, 872409692, 274020867, 227980499, 938558924, 930080595, 459971445, 938529868, 880656466, 355596554, 145610687, 518825009, 803755538, 225033602, 934453445, 987488164, 483387315, 584253231, 306086020, 921839562, 161675345, 788465732, 38720111, 98902336, 588184190, 897107184, 744165157, 670174564, 731564158, 482246206, 543294979, 218394567, 207172249, 817315845, 446375066, 145731172, 599912791, 906346510, 936777392, 333085609, 114459415, 934904430, 851910617, 918214952, 12454383, 638880414, 758219467, 495841698, 75649996, 64305486, 270197611, 237325341, 70528};
+    const long long r = 1;
+    const long long result = countTriplets(arr, r);
+
+    ASSERT_EQ(result, 0);
+}
+
+TEST(TripletsTestSuite, HackerrankCase_3) {
+    const vector<long long> arr = { 1, 1, 1, 1, 1, 1};
+    const long long r = 1;
+    const long long result = countTriplets(arr, r);
+
+    ASSERT_EQ(result, 20);
+}
+
+TEST(TripletsTestSuite, LargeHomogeneousList) {
+    const vector<long long> arr = vector<long long>(10000, 1237);
+    const long long r = 1;
+    const long long result = countTriplets(arr, r);
+
+    ASSERT_EQ(result, 166616670000);
+}
