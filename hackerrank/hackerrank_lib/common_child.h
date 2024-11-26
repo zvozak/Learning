@@ -5,6 +5,10 @@
 #ifndef COMMON_CHILD_H
 #define COMMON_CHILD_H
 
-void test_common_child();
+#include <string>
+
+using namespace std;
+
+int commonChild(string s1, string s2);
 
 #endif //COMMON_CHILD_H
